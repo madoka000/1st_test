@@ -1,3 +1,6 @@
+@extends('layouts.app')　　　　　　　　　　　　　　　　　　
+
+@section('content')
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -9,7 +12,6 @@
         <link rel="stylesheet" href="/css/app.css">
     </head>
     <body>
-       
         <h1 class="title">
             {{ $post->title }}   
         </h1>
@@ -24,6 +26,6 @@
         <div class="footer">
             <a href="/">戻る</a>
         </div>
-        
     </body>
-</html> 
+</html>  
+@endsection

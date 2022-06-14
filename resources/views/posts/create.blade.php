@@ -1,3 +1,6 @@
+@extends('layouts.app')　　　　　　　　　　　　　　　　　　
+
+@section('content')
 <!DOCTYPE HTML>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -10,7 +13,6 @@
             @csrf
             <div class="title">
                 <h2>Title</h2>
-
                 <input type="text" name="post[title]" placeholder="タイトル"/>
             </div>
             <div class="body">
@@ -30,7 +32,6 @@
         </form>
         <div class="back">[<a href="/">back</a>]</div>
     </body>
-
 </html> 
 </html>
-
+@endsection

@@ -20,7 +20,7 @@ class AddImageColumnToPostsTable extends Migration
                 $table->string('image', 100)->nullable();
         });
     }
-    
+
     /**
      * Reverse the migrations.
      *
@@ -32,5 +32,3 @@ class AddImageColumnToPostsTable extends Migration
             //
         });
     }
-   
-}
